@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="d-flex flex-wrap">
+    {% for info in data %}
+    <div class="card m-2" style="width: 18rem;">
+       
+        <div class="card-body">
+          <img src="{{info.strMealThumb}}" alt="Loading......">
+          <h5 class="card-title">Nmae: {{info.strMeal}}</h5>
+         <h5>Id : {{info.idMeal}}</h5>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing. </p>
+        </div>
+    </div>
+    {% endfor %}
+   </div>
+{% endblock  %}
